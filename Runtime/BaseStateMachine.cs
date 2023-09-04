@@ -125,7 +125,7 @@ namespace SimpleMan.StateMachine
             StopPreviousState();
 
             CurrentStateKey = key;
-            PrintStateChangedLog(key);
+            PrintStateChangedLog();
             TryCacheCurrentStateAsTickable();
             state.Start();
         }
@@ -140,6 +140,7 @@ namespace SimpleMan.StateMachine
             StopPreviousState();
 
             CurrentStateKey = key;
+            PrintStateChangedLog();
             TryCacheCurrentStateAsTickable();
             state.Start(arg0);
         }
@@ -154,6 +155,7 @@ namespace SimpleMan.StateMachine
             StopPreviousState();
 
             CurrentStateKey = key;
+            PrintStateChangedLog();
             TryCacheCurrentStateAsTickable();
             state.Start(arg0, arg1);
         }
@@ -168,6 +170,7 @@ namespace SimpleMan.StateMachine
             StopPreviousState();
 
             CurrentStateKey = key;
+            PrintStateChangedLog();
             TryCacheCurrentStateAsTickable();
             state.Start(arg0, arg1, arg2);
         }
@@ -194,7 +197,7 @@ namespace SimpleMan.StateMachine
             Logger.PrintWarning($"{Name}: {message}");
         }
 
-        private void PrintStateChangedLog(TEnum newState)
+        private void PrintStateChangedLog()
         {
             PrintInfoIfPossible(
                 $"State changed from '{PreviousStateKey}' " +
