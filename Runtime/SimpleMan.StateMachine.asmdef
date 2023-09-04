@@ -1,0 +1,17 @@
+{
+    "name": "SimpleMan.StateMachine",
+    "rootNamespace": "",
+    "references": [
+        "GUID:3cd57a010316e6244b4788db045e27ef",
+        "GUID:768624e97d3a36c449c336a988ba7749"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

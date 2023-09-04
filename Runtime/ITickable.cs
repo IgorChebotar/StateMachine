@@ -2,7 +2,6 @@
 {
     public interface ITickable
     {
-        //------METHODS
         void Tick();
     }
 }
