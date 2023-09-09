@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace SimpleMan.StateMachine
+﻿namespace SimpleMan.StateMachine
 {
     /// <summary>
     /// Provides functionality to gettin information about state machine. 
